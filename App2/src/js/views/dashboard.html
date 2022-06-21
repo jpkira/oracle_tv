@@ -1,0 +1,97 @@
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+
+    <div class="oj-flex">
+        <div class="oj-md-12 oj-lg-12 oj-xl-12 oj-flex-item title">
+          <h1>Oracle Cloud TV</h1>
+        </div>
+    </div>
+
+    <div class="oj-flex">
+      <!-- This is for a cool border bottom background :) See app.css -->
+        <div class="oj-md-8 oj-lg-8 oj-xl-8 oj-flex-item fader">
+        </div>
+    </div>
+
+    <div class="oj-flex">
+      <div class="oj-md-7 oj-lg-7 oj-xl-7 oj-flex-item tv">
+        <h1><span id="currDate"></span> &mdash; <span id="currTime"></span></h1>
+      </div>
+     
+      <div class="oj-md-5 oj-lg-5 oj-xl-5 oj-flex-item skedtitle">
+        <h1>Weather Forecast</h1>
+      </div>
+    </div>
+    
+    <!-- WHAT'S HOT PANEL: Large picture news headlines -->
+    <div class="oj-flex">
+      <div class="oj-md-7 oj-lg-7 oj-xl-7 oj-flex-item main"/>
+        <div class="headlines">
+        </div>
+    </div>
+
+    <!-- WEATHER PANELS -->
+    <div class="oj-md-5 oj-lg-5 oj-xl-5 oj-flex-item panels">
+      <div class = "oj-flex forecast">
+        <!-- Simply means "for every data in the observable array called weather (see dashbaord.js) make a copy of this template." Think of it as a for-each loop in Knockout.js or in any programming languauge you have learned-->
+        <oj-bind-for-each data="[[weather]]" as="weatherinfo">
+          <template>
+
+            <div class="oj-md-4 oj-lg-4 oj-xl-4 weather oj-panel" :style='[[weatherinfo.data.style]]'>
+              <div class="oj-flex">
+                <div class="oj-md-6 oj-lg-6 oj-xl-6 oj-flex-item">
+                  <h2><oj-bind-text value="[[weatherinfo.data.timeText]]"></oj-bind-text></h2>
+                  <h3><oj-bind-text value="[[weatherinfo.data.descriptions]]"></oj-bind-text></h3>
+                </div>
+                <div class="oj-md-6 oj-lg-6 oj-xl-6 oj-flex-item">
+                  <h1><oj-bind-text value="[[weatherinfo.data.temperature]]"></oj-bind-text>&deg;</h1>
+                </div>
+              </div>
+            </div>
+
+          </template>
+        </oj-bind-for-each>
+      </div>
+
+      <!-- ANNOUNCEMENTS PANELS -->
+      <div class="annomargin">
+        <h1>Announcements</h1>
+        <div class="oj-flex">
+          <div class="oj-md-6 oj-lg-6 oj-xl-6 announcements upper-left"></div>
+          <div class="oj-md-6 oj-lg-6 oj-xl-6 announcements upper-right"></div>      
+        </div>
+
+        <div class = "oj-flex">
+          <div class="oj-md-6 oj-lg-6 oj-xl-6 announcements lower-left"></div>
+          <div class="oj-md-6 oj-lg-6 oj-xl-6 announcements lower-right"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="oj-flex bot">
+    <div class="oj-md-7 oj-lg-7 oj-xl-7 oj-flex-item panels maframe"> 
+      <!-- ROOM SCHEDULES PANELS-->
+      <h1>Meetings &amp; Activities</h1>
+      <div class="oj-flex">
+        <div class="oj-md-3 oj-lg-3 oj-xl-3 oj-panel sched schedA"></div>
+        <div class="oj-md-3 oj-lg-3 oj-xl-3 oj-panel sched schedB"></div>
+        <div class="oj-md-3 oj-lg-3 oj-xl-3 oj-panel sched schedC"></div>
+        <div class="oj-md-3 oj-lg-3 oj-xl-3 oj-panel sched schedD"></div>
+      </div>
+    </div>
+
+    <div class="oj-md-5 oj-lg-5 oj-xl-5 oj-flex-item events"> 
+      <!-- EVENTS PANELS-->
+      <h1>People, Communities &amp; Events</h1>
+      <div class="oj-flex">
+        <div class="oj-md-6 oj-lg-6 oj-xl-6 event event1"></div>     
+        <div class="oj-md-6 oj-lg-6 oj-xl-6 event event2"></div>     
+      </div>
+    </div>
+
+  </div>
+</div>

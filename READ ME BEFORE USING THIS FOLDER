@@ -1,0 +1,73 @@
+---- READ ME BEFORE USING THIS FOLDER ---
+
+This is Oracle TV, one of Accenture's "newest(?)" projects. To put it simply, it is a Dash-board type web program which displays
+important news about the company, room schedules, announcements, news about the world, weather in Taguig, and Accenture's and Oracle's 
+individual stocks in the business. It is a web-based program which showcases the capabilities of Oracle products like Oracle JET and Oracle
+APEX.
+
+DYK: This is the same Oracle that manages the Java programming language.
+
+PREREQUISITES:
+
+Languages:
+-- HTML
+-- CSS
+-- JavaScript, preferably the ff:
+	-- Oracle JavaScript Extension Toolkit (Oracle JET) [front-end]
+	-- Knockout.js
+	-- slick jQuery carousel [front-end]
+	-- node JS for server side implementing
+	-- jQuery in general
+
+Resources:
+-- The JET Site Cookbook: http://www.oracle.com/webfolder/technetwork/jet/jetCookbook.html
+-- W3Schools.com: https://www.w3schools.com/ 
+-- slick official documentation: http://kenwheeler.github.io/slick/
+-- Knockout.js: http://knockoutjs.com/
+-- Oracle JET documentation: https://docs.oracle.com/cd/E94291_01/jet/reference-jet/index.html
+
+Recommended that you learn Oracle JET basics before jumping into the project on your first few days :)
+
+Documentation is provided in the files called dashboard.html, index.html, and dashboard.js. CSS files included are app.css and styles.css
+-- public --> js --> viewModels --> dashboard.html (for the skeletal framework)
+-- public --> js --> views --> dashboard.js (for the logic)
+-- public --> css --> app.css
+-- public --> css --> styles.css
+
+RUNNING THE SOFTWARE:
+
+1. In command line, type 'cd oracle_tv'. Then, type 'nodemon server.js'. 
+(Nodemon is a node.js plugin that allows the program to run forever even with changes made to the program ).
+
+2. In your browser, type the ff: "localhost:9998".
+
+USING Oracle JET:
+
+THe folder called App2 is the Oracle JET app mismo.
+
+To see it in action, open cmd line and type "cd oracle_tv" then "cd App2".
+Then type "ojet build" to build the program, and "ojet serve" to see it.
+
+GIT stuff:
+
+1. if you have git installed in your PC. Let me tell you that this is the 'trial 2' branch, which is different from the 'master' branch. 
+2. In case you made any changes to this branch do the ff:
+	a. "git pull" -- to get the latest update from the remote repository
+	b. "git add ." -- add changes from all your files
+	c. "git commit -m "*insert comment here*" " --- to commit
+	d. "git push" -- to push your files to the remote repository.
+
+ISSUES: 
+
+-- refresh function has an issue with constantly appending slides to the carousels. I have used arrays as a rudimentary workaround method, but being a novice front-end web developer, it still has to be improved to get full functionality.
+
+Good luck on your internship and enjoy :).
+
+-- christian.j.c**n
+
+
+
+
+
+
+

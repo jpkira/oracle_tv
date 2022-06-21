@@ -1,0 +1,14 @@
+----README!------
+
+For people who will use this front-end.
+
+Assuming you have node.js, nodemon, and Oracle JET set up:
+
+1. open command line and cd to 'App2'
+2. If you have no issues with the server port, type 'ojet serve' and you're good to go!
+2.1. Else, open this folder in a text editor.
+2.2. go to scripts > config > oraclejet-serve.js
+2.3. In oraclejet-serve.js, go to line 70 and change port number. DO NOT ADD SEMICOLONS AT THE END NOR MANIPULATE IT VOLUNTARILY. "port" : number
+2.4. save file, and in CLI perform 'ojet serve' again. 
+
+If all else fails, go to 22.53E until July 20. 

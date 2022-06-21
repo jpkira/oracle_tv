@@ -1,0 +1,333 @@
+/*
+    Document   : override
+    Created on : <date>
+    Author     : <author>
+    Description:
+        This is where any of your application specific styles should be included
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300, 400, 500, 600, 700";
+body {
+	font-family: 'Graphik', sans-serif;
+	background: #fafafa;
+}
+
+oj-module:not(.oj-complete) {
+	visibility: hidden;
+}
+
+oj-module {
+	display: block;
+}
+
+.oj-hybrid-padding {
+	padding-left: 0.3125rem;
+	padding-right: 0.3125rem;
+	padding-top: 4.625rem;
+	padding-bottom: 0.625rem;
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.title h1 {
+	color: white;
+	font-variant-caps: small-caps;
+	margin-bottom: 0px;
+	font-size: 36px;
+}
+
+.fader {
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 39%, rgba(255, 255, 255, 0) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 39%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(90deg, rgba(255, 255, 255, 1) 39%, rgba(255, 255, 255, 0) 100%);
+	height: 3px;
+}
+
+.tv h1 {
+	color: white;
+	font-family: "Graphik";
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#currTime {
+	font-size: 0.75em;
+	font-family: "Graphik";
+	font-weight: 500;
+}
+
+#currDate {
+	font-size: 0.75em;
+}
+
+.main {
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 5px;
+	max-width: 57%;
+}
+
+.container,
+.birthday-container {
+	position: relative;
+	text-align: center;
+}
+
+.container h3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	font-weight: 400;
+	column-count: 2;
+}
+
+.birthday-container h3 {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	font-size: 18px;
+	font-weight: 400;
+	column-count: 3;
+}
+
+.oj-panel {
+	border: none;
+}
+
+.skedtitle {
+	margin: 0px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.skedtitle h1 {
+	color: white;
+	font-family: 'Graphik';
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.weather {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 11px;
+	max-width: 31%;
+}
+
+.weatherf {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 7px;
+	max-width: 31%;
+}
+
+.panels h1 {
+	color: white;
+	font-family: 'Graphik';
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0px;
+	padding-left: 10px;
+}
+
+.forecast h1 {
+	color: white;
+	font-family: 'Graphik';
+	font-size: 50px;
+	font-weight: normal;
+	margin-top: 2px;
+	padding-left: 0px;
+	text-shadow: 0 0 5px #000000;
+}
+
+.forecast h2 {
+	color: white;
+	font-family: 'Graphik';
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-shadow: 0 0 5px #000000;
+}
+
+.forecast h3 {
+	color: white;
+	font-family: 'Graphik';
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	text-shadow: 0 0 5px #000000;
+}
+
+.annomargin {
+	margin-top: 15px;
+}
+
+.announcements {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 7px;
+	max-width: 48%;
+	height: 125px;
+	overflow: hidden;
+}
+
+.slickanno {
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 125px;
+	overflow: hidden;
+}
+
+.announcements h2 {
+	color: white;
+	font-family: 'Graphik';
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.upper-left {
+	background-color: #eac435;
+}
+
+.upper-right {
+	background-color: #460073;
+}
+
+.lower-left {
+	background-color: #da4167;
+}
+
+.lower-right {
+	background-color: #03cea4;
+}
+
+.bot {
+	margin-top: 15px;
+	max-height: 200px;
+	overflow: hidden;
+}
+
+.slickoranews {
+	min-height: 150px;
+	max-height: 150px;
+	overflow: hidden;
+}
+
+.oranews {
+	padding-top: 1px;
+	margin-right: 3.5px;
+	max-width: 48%;
+	height: 200px;
+	overflow: hidden;
+}
+
+.oranews h2 {
+	color: white;
+	font-family: 'Graphik';
+	font-weight: 600;
+}
+
+.oranews1 {
+	background-image: linear-gradient(135deg, #f80000, #000000);
+}
+
+.oranews2 {
+	background-image: linear-gradient(135deg, #000000, #f80000);
+}
+
+.textbg {
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 110px;
+}
+
+.events h1 {
+	color: white;
+	font-family: 'Graphik';
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.events h2 {
+	color: black;
+	font-family: 'Graphik';
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-shadow: 0 0 5px #ffffff;
+}
+
+.events h3 {
+	color: black;
+	font-family: 'Graphik';
+	font-weight: 500;
+	font-size: 18px;
+	text-shadow: 0 0 5px #ffffff;
+}
+
+.event {
+	width: 48%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+#welcome-banner {
+	background: url('./images/Welcome.jpg') no-repeat;
+	background-size: cover;
+	height: 180px;
+}
+
+#main-headline {
+	/* background: url('./images/Oracle_Open_World_Accenture.jpg') no-repeat;
+	background-size: contain; */
+	/* position: relative; */
+	height: 410px;
+}
+
+#main-headline > img {
+	position: absolute;
+	left: 0;
+}
+
+/* #main-headline img.top:hover {
+	opacity: 0;
+} */
+
+/* @keyframes headlines {
+	0% {
+		opacity: 1;
+	}
+
+	45% {
+		opacity: 1;
+	}
+
+	55% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+} */
+
+/* #main-headline img.top {
+	animation-name: headlines;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-direction: alternate;
+} */

@@ -1,0 +1,298 @@
+/*
+    Document   : override
+    Created on : <date>
+    Author     : <author>
+    Description:
+        This is where any of your application specific styles should be included
+*/
+
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Graphik', sans-serif;
+    background: #fafafa;
+}
+
+oj-module:not(.oj-complete) {
+  visibility: hidden; 
+}
+
+oj-module {
+  display: block; 
+}
+
+.oj-hybrid-padding{
+	padding-left: 0.3125rem;
+	padding-right: 0.3125rem;
+	padding-top: 4.625rem;
+	padding-bottom: 0.625rem;
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.title h1{
+	color: white;
+	font-variant-caps: small-caps;
+	margin-bottom: 0px;
+	font-size: 36px;
+}
+
+.fader{
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 39%, rgba(255,255,255,0) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 39%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 39%, rgba(255,255,255,0) 100%);
+	height: 3px;
+}
+
+.tv h1{
+	color: white;
+	font-family: "Graphik";
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#currTime{
+	font-family: "Graphik";
+	font-weight: 500;
+}
+
+.main{
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 5px;
+	max-width: 57%;
+}
+
+.container, .birthday-container{
+	position: relative;
+	text-align: center;
+}
+
+.container h3{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	font-size: 30px;
+	font-weight: 400;
+	column-count: 2;
+}
+
+.birthday-container h3{
+	position: absolute;
+	top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+	font-size: 18px;
+	font-weight: 400;
+	column-count: 3;
+}
+
+.oj-panel {
+	border: none;
+}
+
+.skedtitle{
+	margin: 0px;
+	padding: 0px;
+	padding-top: 10px;
+}
+
+.skedtitle h1{
+	color: white;
+	font-family: 'Graphik';
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.weather{
+	margin-top: 3px; 
+	margin-bottom: 3px;
+	margin-left: 11px;
+	max-width: 31%;
+}
+
+.weatherf{
+	margin-top: 3px; 
+	margin-bottom: 3px;
+	margin-left: 7px;
+	max-width: 31%;
+}
+
+.panels h1{
+	color: white;
+	font-family: 'Graphik';
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0px;
+	padding-left: 10px;
+}
+
+.forecast h1{
+	color: white;
+	font-family: 'Graphik';
+	font-size: 50px;
+	font-weight: normal;
+	margin-top: 2px;
+	padding-left:0px;
+    text-shadow: 0 0 5px #000000;
+}
+
+.forecast h2{
+	color: white;
+	font-family: 'Graphik';
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 3px;
+	margin-bottom: 3px;
+    text-shadow: 0 0 5px #000000;
+}
+
+.forecast h3{
+	color: white;
+	font-family: 'Graphik';
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 3px;
+	margin-bottom: 3px;
+    text-shadow: 0 0 5px #000000;
+}
+
+.annomargin{
+	margin-top: 15px;
+}
+
+.announcements{
+	margin-top: 3px; 
+	margin-bottom: 3px;
+	margin-left: 7px;
+	max-width: 48%;
+	height: 125px;
+	overflow:hidden;
+}
+
+.slickanno{
+	margin-top: 3px; 
+	margin-bottom: 3px;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 125px;
+	overflow:hidden;
+}
+
+.announcements h2{
+	color: white;
+	font-family: 'Graphik';
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.upper-left{
+	background-color: #eac435;
+}
+
+.upper-right{
+	background-color: #460073;
+}
+
+.lower-left{
+	background-color: #da4167;
+}
+
+.lower-right{
+	background-color: #03cea4;
+}
+
+.bot{
+	margin-top: 15px;
+	max-height: 200px;
+	overflow: hidden;
+}
+
+.slicksched{
+	min-height: 150px;
+	max-height: 150px;
+	overflow: hidden;
+}
+
+.sched{
+	padding-top: 1px;
+	margin-right: 3.5px;
+	max-width: 24%;
+	height: 150px;
+	overflow: hidden;
+}
+
+.sched h3{
+	color: white;
+	font-family: 'Graphik';
+	font-size: 16px;
+	font-weight: bold;
+    text-shadow: 0 0 5px #000000;
+}
+.sched h4{
+	color: white;
+	font-family: 'Graphik';
+	font-size: 14px;
+    text-shadow: 0 0 5px #000000;
+}
+
+.schedA{
+	background-image: linear-gradient(135deg, #eac435, #460073);
+}
+
+.schedB{
+	background-image: linear-gradient(135deg, #460073, #da4167);
+}
+
+.schedC{
+	background-image: linear-gradient(135deg, #da4167, #03cea4);
+}
+
+.schedD{
+	background-image: linear-gradient(135deg, #03cea4, #345995);
+}
+
+.textbg{
+	background-color: rgba(175,175,175, 0.55);
+	height: 100px;
+}
+
+.events h1{
+	color: white;
+	font-family: 'Graphik';
+	font-size: 28px;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.events h2{
+	color: white;
+	font-family: 'Graphik';
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+    text-shadow: 0 0 5px #000000;
+}
+
+.events h3{
+	color: white;
+	font-family: 'Graphik';
+	font-weight: 500;
+	font-size: 14px;
+    text-shadow: 0 0 5px #000000;
+}
+
+.event{
+	width: 48%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+
+
+
