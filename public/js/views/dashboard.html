@@ -21,9 +21,9 @@
         <h1><span id="currDate"></span> &mdash; <span id="currTime"></span></h1>
       </div>
      
-      <div class="oj-md-5 oj-lg-5 oj-xl-5 oj-flex-item skedtitle">
+      <!-- <div class="oj-md-5 oj-lg-5 oj-xl-5 oj-flex-item skedtitle">
         <h1>Weather Forecast</h1>
-      </div>
+      </div> -->
     </div>
     
     <!-- WHAT'S HOT PANEL: Large picture news headlines -->
@@ -36,13 +36,21 @@
               <img src="/css/images/oracletv_0302_4.png" height="410" width="800">              
           </div>
       </div>
+      
+      <div class="oj-md-5 oj-lg-5 oj-xl-5 oj-flex-item">
+          <div>              
+              <img src="/css/images/Prepare for Talent Discussion.jpg" height="410" width="580">                           
+          </div>
+      </div>
+
+
     
 
     <!-- WEATHER PANELS -->
-  	<div class="oj-md-5 oj-lg-5 oj-xl-5 oj-flex-item panels">
-  		<div class = "oj-flex forecast">
+  	<!-- <div class="oj-md-5 oj-lg-5 oj-xl-5 oj-flex-item panels">
+  		<div class = "oj-flex forecast"> -->
         <!-- Simply means "for every data in the observable array called weather (see dashbaord.js) make a copy of this template." Think of it as a for-each loop in Knockout.js or in any programming languauge you have learned-->
-  			<oj-bind-for-each data="[[weather]]" as="weatherinfo">
+  			<!-- <oj-bind-for-each data="[[weather]]" as="weatherinfo">
           <template>
 
             <div class="oj-md-4 oj-lg-4 oj-xl-4 weather oj-panel" :style='[[weatherinfo.data.style]]'>
@@ -62,15 +70,15 @@
   		</div>
 
       <div class="oj-flex">
-        <div class="oj-md-12 oj-lg-12 oj-xl-12 oj-flex-item panels"> 
+        <div class="oj-md-12 oj-lg-12 oj-xl-12 oj-flex-item panels">  -->
           <!-- EVENTS PANELS-->
-          <h1 style="margin-top: 15px">Oracle News</h1>
+          <!-- <h1 style="margin-top: 15px">Oracle News</h1>
           <div class="oj-flex" style="margin-left: 11px">  
             <div class="oj-md-5 oj-lg-6 oj-xl-6 oj-panel oranews oranews1"></div>     
             <div class="oj-md-5 oj-lg-6 oj-xl-6 oj-panel oranews oranews2"></div>   
           </div>
         </div>
-      </div>
+      </div> -->
       
       <!-- ANNOUNCEMENTS PANELS -->
       <!-- <div class="annomargin">
@@ -85,7 +93,7 @@
           <div class="oj-md-6 oj-lg-6 oj-xl-6 announcements lower-right"></div>
         </div>
       </div> -->
-    </div>
+    <!-- </div> -->
   </div>
 
   <div class="oj-flex bot">
